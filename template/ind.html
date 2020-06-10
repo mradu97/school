@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>my first django proj</title>
+    </head>
+    <body>
+        {% extends 'base.html' %}
+        {% block content %}
+
+        <p>this is the first proj {{nm}}</p>
+        <form action='sum' method = 'post'  >
+            {% csrf_token %}
+            enter first value<input type ='text' name='n1' ><br>
+            enter second value<input type ='text' name='n2' ><br>
+           <input type = 'submit'> 
+        </form>
+<h1>hi</h1>
+{% endblock %}
+<h2>2</h2>
+
+    </body>
+</html>
